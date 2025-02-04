@@ -26,6 +26,7 @@ textarea{
 .ba{
     margin: auto;
     width: 80%;
+    height: 80vh;
     background-color: rgb(94, 94, 228);
     border-radius: 5px;
     color: beige;
