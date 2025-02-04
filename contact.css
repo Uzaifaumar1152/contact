@@ -4,7 +4,7 @@ body{
 
 }
 div{
-    width: 100%;
+    width: 80%;
     height: 400px; 
     background-color: whitesmoke;
     padding-left: 15px;
@@ -15,14 +15,15 @@ div{
     padding-left: 87px;
 }
 textarea{
+    margin: auto;
     resize: none;
     width: 80%;
     height: 100px;
-    
-    
+    border: 1px solid white;
 }
 .ba{
-    width: 70%;
+    margin: auto;
+    width: 80%;
     background-color: rgb(94, 94, 228);
     border-radius: 5px;
     color: beige;
@@ -30,6 +31,7 @@ textarea{
 
 }
 .ga, .ka{
+    margin: auto;
     width: 80%;
     border: 1pt solid rgb(54, 53, 53);
     
