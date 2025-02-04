@@ -6,7 +6,7 @@ body{
 }
 div{
     width: 80%;
-    height: 80vh; 
+    height: 90vh; 
     background-color: whitesmoke;
     padding-left: 15px;
     padding-top: 8px;
@@ -36,6 +36,7 @@ textarea{
     margin: auto;
     width: 80%;
     border: 1pt solid rgb(54, 53, 53);
+    height: 20px;
     
 }
 
