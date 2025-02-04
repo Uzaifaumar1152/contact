@@ -1,6 +1,7 @@
 body{
     background-image: url(images/contact.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 div{
@@ -12,7 +13,8 @@ div{
     margin: auto; 
 } 
 .H1{
-    padding-left: 87px;
+    text-align: center;
+    margin: auto;
 }
 textarea{
     margin: auto;

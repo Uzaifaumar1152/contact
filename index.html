@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this form can help you contact uzaifa">
+    <meta name="keywords" content="contactForm, contact uzaifa">
     <title>contact form</title>
     <link rel="stylesheet" href="contact.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -14,16 +16,24 @@
             });
         })();
     </script>
+    
     <script type="text/javascript">
         window.onload = function() {
+            let h2 = document.getElementById("h2");
             document.getElementById('contactForm').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // these IDs from the previous steps
                 emailjs.sendForm('service_yuvy3i7', 'template_l31bnmt', this)
                     .then(() => {
-                        console.log('SUCCESS!');
+                        h2.textContent= `message sent successful`;
+                        h2.style.color="green";
+                        h2.style.textAlign="center"
+
+                        // console.log('SUCCESS!');
                     }, (error) => {
-                        console.log('FAILED...', error);
+                        // console.log('FAILED...', error);
+                        h2.textContent= `message failrd to sent`;
+                        h2.style.color="red";
                     });
             });
         }
@@ -32,15 +42,15 @@
 <body>
     <div> 
         <form id="contactForm">
-            <input type="hidden" name="contact_number" value="697483">
-
+            <h2 id="h2"></h2>
+           <input type="hidden" name="contact_number" value="697483" required>
            <h2 class="H1">Contact Us</h2>
            <label>Name</label><br>
-           <input class="ka" type="text" name="user_name"><p></p>
+           <input class="ka" type="text" name="user_name"required><p></p>
            <label>Email</label> <br>
-           <input class="ga" type="email" name="user_email"><p></p>
+           <input class="ga" type="email" name="user_email" required><p></p>
            <label>Message</label><br>
-           <textarea name="massage"></textarea><p></p>
+           <textarea name="massage" required></textarea><p></p>
            <input class="ba" type="submit" value="SEND">
         </form>
     </div>
